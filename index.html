@@ -13,9 +13,9 @@
   <div class="container">
       <form id="search-form"> 
         <input  type = "search"  placeholder = "Type a city.."  autocomplete = "off" autofocus="on" id="city-input"/>
-        <input  type = "submit"  value = "Search"/>
+        <input  type = "submit"  value = "Search" class="submit"/>
     </form>
-    <button type=search id="current-location-button">🔎</button>
+    <button type=search id="current-location-button" class="location">🧭</button>
     <div class="box">
     <h1 id="city"></h1> 
     <h2 id="date"></h2>
@@ -34,47 +34,23 @@
     </ul>
     </div>
     <hr>
-    <div class="card-deck">
-      <div class="card">
-          <p class="card-text">Friday</p>
-        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="week" alt="sunny">
-        <div class="card-body">
-          <p class="card-test">30°C</p>
+    <div class="weather-forecast" id="forecast">
+      <div class="row">
+        <div class="col-2">
+          <div class="weather-forecast-date">Tue</div>
+          <img
+            src="https://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+            width="53"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max">°</span>
+            <span class="weather-forecast-temperature-min">°</span>
           </div>
-      </div>
-      <div class="card">
-          <p class="card-text">Saturday</p>
-        <img src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png" class="week" alt="sunny">
-        <div class="card-body">
-          <p class="card-text">27°C</p>
-          </div>
-      </div>
-      <div class="card">
-          <p class="card-text">Sunday</p>
-        <img src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png" class="week" alt="sunny">
-        <div class="card-body">
-          <p class="card-text">29°C</p>
-          </div>
-      </div>
-      <div class="card">
-          <p class="card-text">Monday</p>
-        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="week" alt="sunny">
-        <div class="card-body">
-          <p class="card-text">26°C</p>
-          </div>
-      </div>
-      <div class="card">
-          <p class="card-text">Tuesday</p>
-        <img src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png" class="week" alt="sunny">
-        <div class="card-body">
-          <p class="card-text">23°C</p>
-          </div>
-      </div>
+        </div>
+        </div>
     </div>
   </div>
-        </div>
-      </div>
-    </div>
     <span class="link">
     <a href="https://github.com/Darkneska/my-awesome-weather-app">Open-source</a> coded by Denisa Pavlikova</span>
     <script src="src/app.js"></script>

@@ -44,10 +44,7 @@ h3{
   display: block;
   text-align: left;
 }
-p{
-  text-align: center;
-  display: block;
-}
+
 .box{
   border: 1px solid rgb(162, 202, 52);
   border-radius: 10px;
@@ -60,35 +57,8 @@ p{
   margin-left: 50px;
   background-image: url(http://www.dsomsl.cz/wp-content/uploads/2016/03/Cenkovice-2a-1024x576.jpg);
 }
-.week{
-  margin-top:0px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  width: 120px;
-  display: block;
-  text-align: center;
-  
-}
-.card{
-  border: 1px solid rgb(54, 52, 202);
-  border-radius: 200px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background-color: #F8F8F8;
-  padding: 0;
-  
-}
-.card-text{
-  color: rgb(54, 52, 202);
-  text-align: center;
-  padding-top: 20px;
-  font-weight: bold;
-}
-.card-test{
+
+.forecast-temp{
   color: rgb(54, 52, 202);
   margin-bottom: 0px;
   margin-top: 0px;
@@ -96,16 +66,21 @@ p{
   font-weight: bold;
 }
 
-button{
+.submit{
  position: center;
+ transition: opacity 150ms ease;
+ cursor: pointer;
+ 
 }
-
+.submit:hover{
+  background: rgb(54, 52, 202);
+  color: white;
+}
 ul {
     margin: 0;
     padding: 0;
     text-align: right;
   }
-  
   li {
     list-style: none;
     margin: 0;
@@ -113,8 +88,9 @@ ul {
     font-size: 30px;
     font-weight: 100;
     line-height: 30px;
+    color: yellow;
   }
-  div{
+  .weather-temperature{
     text-align: left;
     color: yellow;
   }
@@ -129,3 +105,31 @@ ul {
     text-align: center;
     display: block;
   }
+.units{
+  text-align: left;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align:center;
+  font-size: 16px;
+  background-color: white;
+}
+.weather-forecast-date{
+  font-size: 16px;
+  color: rgb(18, 14, 245);
+  font-weight: bold;
+}
+.weather-forecast-temperatures{
+  font-size: 13px;
+  color: rgb(18, 14, 245);
+}
+.location{
+  position: center;
+ transition: opacity 150ms ease;
+ cursor: pointer;
+ border-radius: 20px;
+}
+.location:hover{
+  background: rgb(236, 109, 109);
+ 
+}
