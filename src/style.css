@@ -93,6 +93,7 @@ ul {
   .weather-temperature{
     text-align: left;
     color: yellow;
+    font-size: 20px;
   }
   .weather-temperature .active {
     color: yellow;
@@ -112,8 +113,7 @@ ul {
   margin-top: 20px;
   text-align:center;
   font-size: 16px;
-  background-color: white;
-}
+  }
 .weather-forecast-date{
   font-size: 16px;
   color: rgb(18, 14, 245);
